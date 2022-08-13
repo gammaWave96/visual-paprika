@@ -3,7 +3,3 @@ project(VisualPaprika)
 add_executable(${PROJECT_NAME} VisualPaprika/main.cpp)
 
 add_subdirectory(3rdParty/glfw)
-
-
-
-
