@@ -1,1 +1,1 @@
-cmake -S . -B cmakeBin
+cmake -DGLFW_BUILD_DOCS=OFF -S . -B cmakeBin
