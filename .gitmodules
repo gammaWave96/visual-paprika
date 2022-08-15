@@ -2,3 +2,6 @@
 	path = 3rdParty/glfw
 	url = https://github.com/glfw/glfw.git
 	branch = 3.3-stable
+[submodule "3rdParty/Vulkan-Headers"]
+	path = 3rdParty/Vulkan-Headers
+	url = https://github.com/KhronosGroup/Vulkan-Headers.git
