@@ -6,7 +6,7 @@ add_subdirectory(3rdParty/glfw)
 
 target_include_directories(
     ${PROJECT_NAME} 
-    PUBLIC 3rdParty/glfw/include
+	PUBLIC 3rdParty/glfw/include
     )
 
 target_link_directories(
@@ -18,3 +18,21 @@ target_link_libraries(
     ${PROJECT_NAME}
     glfw
     )
+
+if(MSVC)
+    target_include_directories( 
+        ${PROJECT_NAME} 
+	    PUBLIC F:/ASSETS/VULKAN_SDK/Include
+    )
+    target_link_directories(
+        ${PROJECT_NAME}
+        PRIVATE F:/ASSETS/VULKAN_SDK/Lib
+    )
+    target_link_libraries(
+    ${PROJECT_NAME}
+    Vulkan-1.lib
+    )
+else()
+endif()
+
+
