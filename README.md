@@ -1,11 +1,11 @@
 # visual-paprika
 Exploring of data visualisation
 
--Visual assembler
+-Visual assembler<br>
 
--Animation of algorithms
+-Animation of algorithms<br>
 
--Way of software creation without langual(text based) code
+-Way of software creation without langual(text based) code<br>
 
 ...
 
