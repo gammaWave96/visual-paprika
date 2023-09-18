@@ -40,6 +40,18 @@ if(MSVC)
     Vulkan-1.lib
     )
 else()
+    target_include_directories( 
+        ${PROJECT_NAME} 
+        PUBLIC /Sdk/vulkan/1.3.216.0/x86_64/include/
+    )
+    target_link_directories(
+        ${PROJECT_NAME}
+        PRIVATE /Sdk/vulkan/1.3.216.0/x86_64/lib/
+    )
+    target_link_libraries(
+    ${PROJECT_NAME}
+    libvulkan.so.1
+    )
 endif()
 
 
