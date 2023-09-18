@@ -1,5 +1,6 @@
 #include<GLFW/glfw3.h>
 #include<vulkan/vulkan.h>
+#include"utils.hpp"
 
 #include <iostream>
 using namespace std;
@@ -94,6 +95,9 @@ int main() {
 
    glfwSetMonitorCallback(visual_paprika::glfw::monitor_callback);
    visual_paprika::glfw::PrintConsoleMonitorData();
+
+   char data512[512];
+   visual_paprika::WriteBinaryInFile(data512);
    // Main loop
    while( !glfwWindowShouldClose(window) )
    {

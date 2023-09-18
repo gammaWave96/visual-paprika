@@ -4,6 +4,13 @@ add_executable(${PROJECT_NAME} VisualPaprika/main.cpp)
 
 add_subdirectory(3rdParty/glfw)
 
+target_sources(
+    ${PROJECT_NAME}
+    PUBLIC
+    VisualPaprika/utils.cpp
+    VisualPaprika/utils.hpp
+)
+
 target_include_directories(
     ${PROJECT_NAME} 
 	PUBLIC 3rdParty/glfw/include
